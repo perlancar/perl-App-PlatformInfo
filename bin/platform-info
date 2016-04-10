@@ -1,6 +1,9 @@
 #!perl
 
-use Data::Dumper;
-use Devel::Platform::Info;
+require Data::Dumper;
+require Devel::Platform::Info;
 
-print Dumper(Devel::Platform::Info->new->get_info);
+print Data::Dumper::Dumper(Devel::Platform::Info->new->get_info);
+
+# ABSTRACT: Print platform information gathered by Devel::Platform::Info
+# PODNAME:
