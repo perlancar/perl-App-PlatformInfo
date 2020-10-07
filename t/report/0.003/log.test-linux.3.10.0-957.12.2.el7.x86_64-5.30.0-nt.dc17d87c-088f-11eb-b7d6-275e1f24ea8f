@@ -1,0 +1,306 @@
+From <strong>Slaven Rezić (SREZIC)</strong>
+Subject: <strong>PASS App-PlatformInfo-0.003 5.30.0 GNU/Linux</strong>
+Date: <strong>2020-10-07T11:25:53Z</strong>
+
+This distribution has been tested as part of the CPAN Testers
+project, supporting the Perl programming language.  See
+http://wiki.cpantesters.org/ for more information or email
+questions to cpan-testers-discuss@perl.org
+
+
+--
+Dear perlancar,
+
+This is a computer-generated report for App-PlatformInfo-0.003
+on perl 5.30.0, created by CPAN-Reporter-1.2018.
+
+Thank you for uploading your work to CPAN.  Congratulations!
+All tests were successful.
+
+Sections of this report:
+
+    * Tester comments
+    * Program output
+    * Prerequisites
+    * Environment and other context
+
+------------------------------
+TESTER COMMENTS
+------------------------------
+
+Additional comments from tester:
+
+none provided
+
+------------------------------
+PROGRAM OUTPUT
+------------------------------
+
+Output from '/usr/bin/make test':
+
+PERL_DL_NONLAZY=1 "/opt/perl-5.30.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ........... ok
+# Output of platform-info: {
+#   'archname' => 'x86_64',
+#   'codename' => 'Core',
+#   'is32bit' => 0,
+#   'is64bit' => 1,
+#   'kernel' => 'linux-3.10.0-1127.19.1.el7.x86_64',
+#   'kname' => 'Linux',
+#   'kvers' => '3.10.0-1127.19.1.el7.x86_64',
+#   'osflag' => 'linux',
+#   'oslabel' => 'CentOS',
+#   'osname' => 'GNU/Linux',
+#   'osvers' => '7.8.2003',
+#   'source' => {
+#                 'cat /etc/.issue' => '',
+#                 'cat /etc/issue' => '\\S
+# Kernel \\r on an \\m',
+#                 'lsb_release -a' => 'LSB Version:	:core-4.1-amd64:core-4.1-noarch
+# Distributor ID:	CentOS
+# Description:	CentOS Linux release 7.8.2003 (Core)
+# Release:	7.8.2003
+# Codename:	Core',
+#                 'uname -a' => 'Linux cloud3.bbbike.org 3.10.0-1127.19.1.el7.x86_64 #1 SMP Tue Aug 25 17:23:54 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux',
+#                 'uname -m' => 'x86_64',
+#                 'uname -o' => 'GNU/Linux',
+#                 'uname -r' => '3.10.0-1127.19.1.el7.x86_64',
+#                 'uname -s' => 'Linux'
+#               }
+# }
+t/01-basic.t ............. ok
+t/author-critic.t ........ skipped: these tests are for testing by the author
+t/author-pod-coverage.t .. skipped: these tests are for testing by the author
+t/author-pod-syntax.t .... skipped: these tests are for testing by the author
+All tests successful.
+Files=5, Tests=3,  0 wallclock secs ( 0.04 usr  0.01 sys +  0.27 cusr  0.08 csys =  0.40 CPU)
+Result: PASS
+
+------------------------------
+PREREQUISITES
+------------------------------
+
+Prerequisite modules loaded:
+
+requires:
+
+    Module               Need  Have    
+    -------------------- ----- --------
+    Data::Dumper         0     2.174   
+
+build_requires:
+
+    Module               Need  Have    
+    -------------------- ----- --------
+    ExtUtils::MakeMaker  0     7.44    
+    File::Spec           0     3.78    
+    FindBin              0     1.51    
+    IO::Handle           0     1.42    
+    IPC::Open3           0     1.20    
+    IPC::System::Options 0.335 0.336   
+    strict               0     1.11    
+    Test::More           0.98  1.302181
+    warnings             0     1.44    
+
+configure_requires:
+
+    Module               Need  Have    
+    -------------------- ----- --------
+    ExtUtils::MakeMaker  0     7.44    
+
+
+------------------------------
+ENVIRONMENT AND OTHER CONTEXT
+------------------------------
+
+Environment variables:
+
+    LANG = en_US.UTF-8
+    PATH = /usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/cpansand/bin/linux-gnu:/home/cpansand/bin/sh:/home/cpansand/bin:/usr/games:/home/cpansand/devel:/home/eserte/src/srezic-misc/scripts
+    PERL5LIB = 
+    PERL5OPT = 
+    PERL5_CPANPLUS_IS_RUNNING = 6550
+    PERL5_CPAN_IS_RUNNING = 6550
+    PERL5_CPAN_IS_RUNNING_IN_RECURSION = 5810,6550
+    PERLDOC = -MPod::Perldoc::ToTextOverstrike
+    PERL_BATCH = yes
+    PERL_CANARY_STABILITY_NOPROMPT = 1
+    PERL_CPAN_REPORTER_CONFIG = /var/tmp/cpansmoker-1023/2020100713/cpanreporter_000_config.ini
+    PERL_EXTUTILS_AUTOINSTALL = --defaultdeps
+    PERL_USE_UNSAFE_INC = 1
+    SHELL = /usr/bin/zsh
+    TERM = screen
+    TMPDIR = /var/tmp/cpansmoker-1023/2020100713
+
+Perl special variables (and OS-specific diagnostics, for MSWin32):
+
+    $^X = /opt/perl-5.30.0/bin/perl
+    $UID/$EUID = 1023 / 1023
+    $GID = 1023 1023
+    $EGID = 1023 1023
+
+Perl module toolchain versions installed:
+
+    Module              Have    
+    ------------------- --------
+    CPAN                2.22    
+    CPAN::Meta          2.150010
+    Cwd                 3.78    
+    ExtUtils::CBuilder  0.280231
+    ExtUtils::Command   7.44    
+    ExtUtils::Install   2.14    
+    ExtUtils::MakeMaker 7.44    
+    ExtUtils::Manifest  1.72    
+    ExtUtils::ParseXS   3.40    
+    File::Spec          3.78    
+    JSON                4.02    
+    JSON::PP            4.05    
+    Module::Build       0.4229  
+    Module::Signature   0.83    
+    Parse::CPAN::Meta   2.150010
+    Test::Harness       3.42    
+    Test::More          1.302181
+    YAML                1.29    
+    YAML::Syck          1.31    
+    version             0.9927  
+
+
+--
+
+Summary of my perl5 (revision 5 version 30 subversion 0) configuration:
+   
+  Platform:
+    osname=linux
+    osvers=3.10.0-957.12.2.el7.x86_64
+    archname=x86_64-linux
+    uname='linux centos-4gb-hel1-1 3.10.0-957.12.2.el7.x86_64 #1 smp tue may 14 21:24:32 utc 2019 x86_64 x86_64 x86_64 gnulinux '
+    config_args='-ds -e -Dprefix=/opt/perl-5.30.0 -Dcf_email=srezic@cpan.org'
+    hint=recommended
+    useposix=true
+    d_sigaction=define
+    useithreads=undef
+    usemultiplicity=undef
+    use64bitint=define
+    use64bitall=define
+    uselongdouble=undef
+    usemymalloc=n
+    default_inc_excludes_dot=define
+    bincompat5005=undef
+  Compiler:
+    cc='cc'
+    ccflags ='-fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2'
+    optimize='-O2'
+    cppflags='-fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/usr/local/include'
+    ccversion=''
+    gccversion='4.8.5 20150623 (Red Hat 4.8.5-36)'
+    gccosandvers=''
+    intsize=4
+    longsize=8
+    ptrsize=8
+    doublesize=8
+    byteorder=12345678
+    doublekind=3
+    d_longlong=define
+    longlongsize=8
+    d_longdbl=define
+    longdblsize=16
+    longdblkind=3
+    ivtype='long'
+    ivsize=8
+    nvtype='double'
+    nvsize=8
+    Off_t='off_t'
+    lseeksize=8
+    alignbytes=8
+    prototype=define
+  Linker and Libraries:
+    ld='cc'
+    ldflags =' -fstack-protector-strong -L/usr/local/lib'
+    libpth=/usr/local/lib /usr/lib /lib/../lib64 /usr/lib/../lib64 /lib /lib64 /usr/lib64 /usr/local/lib64
+    libs=-lpthread -lnsl -lgdbm -ldb -ldl -lm -lcrypt -lutil -lc -lgdbm_compat
+    perllibs=-lpthread -lnsl -ldl -lm -lcrypt -lutil -lc
+    libc=libc-2.17.so
+    so=so
+    useshrplib=false
+    libperl=libperl.a
+    gnulibc_version='2.17'
+  Dynamic Linking:
+    dlsrc=dl_dlopen.xs
+    dlext=so
+    d_dlsymun=undef
+    ccdlflags='-Wl,-E'
+    cccdlflags='-fPIC'
+    lddlflags='-shared -O2 -L/usr/local/lib -fstack-protector-strong'
+
+
+Characteristics of this binary (from libperl): 
+  Compile-time options:
+    HAS_TIMES
+    PERLIO_LAYERS
+    PERL_COPY_ON_WRITE
+    PERL_DONT_CREATE_GVSV
+    PERL_MALLOC_WRAP
+    PERL_OP_PARENT
+    PERL_PRESERVE_IVUV
+    USE_64_BIT_ALL
+    USE_64_BIT_INT
+    USE_LARGE_FILES
+    USE_LOCALE
+    USE_LOCALE_COLLATE
+    USE_LOCALE_CTYPE
+    USE_LOCALE_NUMERIC
+    USE_LOCALE_TIME
+    USE_PERLIO
+    USE_PERL_ATOF
+  Built under linux
+  Compiled at May 22 2019 22:13:10
+  %ENV:
+    PERL5LIB=""
+    PERL5OPT=""
+    PERL5_CPANPLUS_IS_RUNNING="6550"
+    PERL5_CPAN_IS_RUNNING="6550"
+    PERL5_CPAN_IS_RUNNING_IN_RECURSION="5810,6550"
+    PERLDOC="-MPod::Perldoc::ToTextOverstrike"
+    PERL_BATCH="yes"
+    PERL_CANARY_STABILITY_NOPROMPT="1"
+    PERL_CPAN_REPORTER_CONFIG="/var/tmp/cpansmoker-1023/2020100713/cpanreporter_000_config.ini"
+    PERL_EXTUTILS_AUTOINSTALL="--defaultdeps"
+    PERL_USE_UNSAFE_INC="1"
+  @INC:
+    /opt/perl-5.30.0/lib/site_perl/5.30.0/x86_64-linux
+    /opt/perl-5.30.0/lib/site_perl/5.30.0
+    /opt/perl-5.30.0/lib/5.30.0/x86_64-linux
+    /opt/perl-5.30.0/lib/5.30.0
+    .
+</pre>
+
+        </main>
+
+        <footer>
+            <p>
+            CPAN::Testers::Web v0.001 is powered by <a href="http://mojolicious.org">Mojolicious</a><br />
+            All data and statistics are copyright © 1999-2018 CPAN Testers, and available under the <a href="https://opensource.org/licenses/Artistic-2.0">Artistic License 2.0</a>. Comments and design patches to admin@cpantesters.org.
+            </p>
+
+            <p>
+            The CPAN Testers Family: <br />
+              <a href="http://blog.cpantesters.org"     title="CPAN Testers Blog"       >Blog</a>         •
+              <a href="http://www.cpantesters.org"      title="CPAN Testers Reports"    >Reports</a>      •
+              <a href="http://wiki.cpantesters.org"     title="CPAN Testers Wiki"       >Wiki</a>         •
+              <a href="http://stats.cpantesters.org"    title="CPAN Testers Statistics" >Statistics</a>   •
+              <a href="http://pass.cpantesters.org"     title="CPAN Testers PASS Matrix">PASS Matrix</a>  •
+              <a href="http://prefs.cpantesters.org"    title="CPAN Testers Preferences">Preferences</a>  •
+              <a href="http://metabase.cpantesters.org" title="CPAN Testers Metabase"   >Metabase</a>     •
+              <a href="http://devel.cpantesters.org"    title="CPAN Testers Development">Development</a>  •
+              <a href="http://deps.cpantesters.org"     title="CPAN Dependencies"       >Dependencies</a> •
+              <a href="http://matrix.cpantesters.org"   title="CPAN Testers Matrix"     >Matrix</a>       •
+              <a href="http://analysis.cpantesters.org" title="CPAN Testers Analysis"   >Analysis</a>     •
+              <a href="http://admin.cpantesters.org"    title="CPAN Testers Admin"      >Admin</a>
+            </p>
+            <p>
+            CPAN Testers, supporting the Perl programming language since 1999.
+            </p>
+        </footer>
+
+    </body>
+</html>

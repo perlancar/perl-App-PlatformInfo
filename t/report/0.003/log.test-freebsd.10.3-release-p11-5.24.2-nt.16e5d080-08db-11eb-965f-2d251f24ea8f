@@ -1,0 +1,260 @@
+From <strong>Slaven Rezić (SREZIC)</strong>
+Subject: <strong>PASS App-PlatformInfo-0.003 5.24.2 FreeBSD</strong>
+Date: <strong>2020-10-07T20:24:23Z</strong>
+
+This distribution has been tested as part of the CPAN Testers
+project, supporting the Perl programming language.  See
+http://wiki.cpantesters.org/ for more information or email
+questions to cpan-testers-discuss@perl.org
+
+
+--
+Dear perlancar,
+
+This is a computer-generated report for App-PlatformInfo-0.003
+on perl 5.24.2, created by CPAN-Reporter-1.2018.
+
+Thank you for uploading your work to CPAN.  Congratulations!
+All tests were successful.
+
+Sections of this report:
+
+    * Tester comments
+    * Program output
+    * Prerequisites
+    * Environment and other context
+
+------------------------------
+TESTER COMMENTS
+------------------------------
+
+Additional comments from tester:
+
+none provided
+
+------------------------------
+PROGRAM OUTPUT
+------------------------------
+
+Output from '/usr/bin/make test':
+
+PERL_DL_NONLAZY=1 "/usr/perl5.24.2p/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ........... ok
+# Output of platform-info: {
+#   'archname' => 'amd64',
+#   'is32bit' => 0,
+#   'is64bit' => 1,
+#   'kernel' => 'freebsd-10.3-release-p24',
+#   'kname' => 'FreeBSD',
+#   'kvers' => '10.3-release-p24',
+#   'osflag' => 'freebsd',
+#   'oslabel' => 'FreeBSD',
+#   'osname' => 'FreeBSD',
+#   'osvers' => '10.3',
+#   'source' => {
+#                 'uname -a' => 'FreeBSD cvrsnica-freebsd-101.herceg.de 10.3-RELEASE-p24 FreeBSD 10.3-RELEASE-p24 #0: Wed Nov 15 04:57:40 UTC 2017     root@amd64-builder.daemonology.net:/usr/obj/usr/src/sys/GENERIC  amd64',
+#                 'uname -m' => 'amd64',
+#                 'uname -mrr' => '10.3-RELEASE-p24 amd64',
+#                 'uname -o' => 'FreeBSD',
+#                 'uname -r' => '10.3-RELEASE-p24',
+#                 'uname -s' => 'FreeBSD'
+#               }
+# }
+t/01-basic.t ............. ok
+t/author-critic.t ........ skipped: these tests are for testing by the author
+t/author-pod-coverage.t .. skipped: these tests are for testing by the author
+t/author-pod-syntax.t .... skipped: these tests are for testing by the author
+All tests successful.
+Files=5, Tests=3,  0 wallclock secs ( 0.01 usr  0.02 sys +  0.02 cusr  0.18 csys =  0.23 CPU)
+Result: PASS
+
+------------------------------
+PREREQUISITES
+------------------------------
+
+Prerequisite modules loaded:
+
+requires:
+
+    Module               Need  Have    
+    -------------------- ----- --------
+    Data::Dumper         0     2.160   
+
+build_requires:
+
+    Module               Need  Have    
+    -------------------- ----- --------
+    ExtUtils::MakeMaker  0     7.10_02 
+    File::Spec           0     3.75    
+    FindBin              0     1.51    
+    IO::Handle           0     1.36    
+    IPC::Open3           0     1.20    
+    IPC::System::Options 0.335 0.338   
+    strict               0     1.11    
+    Test::More           0.98  1.302140
+    warnings             0     1.36    
+
+configure_requires:
+
+    Module               Need  Have    
+    -------------------- ----- --------
+    ExtUtils::MakeMaker  0     7.10_02 
+
+
+------------------------------
+ENVIRONMENT AND OTHER CONTEXT
+------------------------------
+
+Environment variables:
+
+    LC_ALL = de_DE.ISO8859-1
+    PATH = /usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/cpansand/bin/freebsd10.3:/home/cpansand/bin/sh:/home/cpansand/bin:/usr/games:/home/cpansand/devel:/home/eserte/src/srezic-misc/scripts
+    PERL5LIB = /home/cpansand/.cpan/build/2020100722/IPC-System-Options-0.338-0UjcFj/blib/arch:/home/cpansand/.cpan/build/2020100722/IPC-System-Options-0.338-0UjcFj/blib/lib:/home/cpansand/.cpan/build/2020100722/Proc-ChildError-0.04-UhxcoO/blib/arch:/home/cpansand/.cpan/build/2020100722/Proc-ChildError-0.04-UhxcoO/blib/lib:/home/cpansand/.cpan/build/2020100722/String-ShellQuote-1.04-djyvxI/blib/arch:/home/cpansand/.cpan/build/2020100722/String-ShellQuote-1.04-djyvxI/blib/lib:/home/cpansand/.cpan/build/2020100722/File-Temp-0.2311-ZRLJPe/blib/arch:/home/cpansand/.cpan/build/2020100722/File-Temp-0.2311-ZRLJPe/blib/lib:/home/cpansand/.cpan/build/2020100722/IPC-Run-20200505.0-txInFJ/blib/arch:/home/cpansand/.cpan/build/2020100722/IPC-Run-20200505.0-txInFJ/blib/lib
+    PERL5OPT = 
+    PERL5_CPANPLUS_IS_RUNNING = 66537
+    PERL5_CPAN_IS_RUNNING = 66537
+    PERL5_CPAN_IS_RUNNING_IN_RECURSION = 95963,66537
+    PERLDOC = -MPod::Perldoc::ToTextOverstrike
+    PERL_BATCH = yes
+    PERL_CANARY_STABILITY_NOPROMPT = 1
+    PERL_CPAN_REPORTER_CONFIG = /var/tmp/cpansmoker-1023/2020100714/cpanreporter_000_config.ini
+    PERL_EXTUTILS_AUTOINSTALL = --defaultdeps
+    SHELL = /usr/local/bin/zsh
+    TERM = screen
+    TMPDIR = /var/tmp/cpansmoker-1023/2020100714
+
+Perl special variables (and OS-specific diagnostics, for MSWin32):
+
+    $^X = /usr/perl5.24.2p/bin/perl
+    $UID/$EUID = 1023 / 1023
+    $GID = 1023 1023
+    $EGID = 1023 1023
+
+Perl module toolchain versions installed:
+
+    Module              Have      
+    ------------------- ----------
+    CPAN                2.11_01   
+    CPAN::Meta          2.150010  
+    Cwd                 3.75      
+    ExtUtils::CBuilder  0.280225  
+    ExtUtils::Command   7.10_02   
+    ExtUtils::Install   2.04      
+    ExtUtils::MakeMaker 7.10_02   
+    ExtUtils::Manifest  1.71      
+    ExtUtils::ParseXS   3.31      
+    File::Spec          3.75      
+    JSON                2.94      
+    JSON::PP            2.27300_01
+    Module::Build       0.4224    
+    Module::Signature   n/a       
+    Parse::CPAN::Meta   2.150010  
+    Test::Harness       3.36_01   
+    Test::More          1.302140  
+    YAML                1.23      
+    YAML::Syck          1.30      
+    version             0.9924    
+
+
+--
+
+Summary of my perl5 (revision 5 version 24 subversion 2) configuration:
+   
+  Platform:
+    osname=freebsd, osvers=10.3-release-p11, archname=amd64-freebsd
+    uname='freebsd cvrsnica-freebsd-101.herceg.de 10.3-release-p11 freebsd 10.3-release-p11 #0: mon oct 24 18:49:24 utc 2016 root@amd64-builder.daemonology.net:usrobjusrsrcsysgeneric amd64 '
+    config_args='-ds -e -Dprefix=/usr/perl5.24.2p -Dcf_email=srezic@cpan.org -Doptimize=-O2 -pipe'
+    hint=recommended, useposix=true, d_sigaction=define
+    useithreads=undef, usemultiplicity=undef
+    use64bitint=define, use64bitall=define, uselongdouble=undef
+    usemymalloc=n, bincompat5005=undef
+  Compiler:
+    cc='cc', ccflags ='-DHAS_FPSETMASK -DHAS_FLOATINGPOINT_H -fno-strict-aliasing -pipe -fstack-protector -I/usr/local/include -D_FORTIFY_SOURCE=2',
+    optimize='-O2 -pipe',
+    cppflags='-DHAS_FPSETMASK -DHAS_FLOATINGPOINT_H -fno-strict-aliasing -pipe -fstack-protector -I/usr/local/include'
+    ccversion='', gccversion='4.2.1 Compatible FreeBSD Clang 3.4.1 (tags/RELEASE_34/dot1-final 208032)', gccosandvers=''
+    intsize=4, longsize=8, ptrsize=8, doublesize=8, byteorder=12345678, doublekind=3
+    d_longlong=define, longlongsize=8, d_longdbl=define, longdblsize=16, longdblkind=3
+    ivtype='long', ivsize=8, nvtype='double', nvsize=8, Off_t='off_t', lseeksize=8
+    alignbytes=8, prototype=define
+  Linker and Libraries:
+    ld='cc', ldflags ='-pthread -Wl,-E  -fstack-protector -L/usr/local/lib'
+    libpth=/usr/lib /usr/local/lib /usr/include/clang/3.4.1 /usr/lib
+    libs=-lpthread -lgdbm -lm -lcrypt -lutil -lc
+    perllibs=-lpthread -lm -lcrypt -lutil -lc
+    libc=, so=so, useshrplib=false, libperl=libperl.a
+    gnulibc_version=''
+  Dynamic Linking:
+    dlsrc=dl_dlopen.xs, dlext=so, d_dlsymun=undef, ccdlflags=' '
+    cccdlflags='-DPIC -fPIC', lddlflags='-shared  -L/usr/local/lib -fstack-protector'
+
+
+Characteristics of this binary (from libperl): 
+  Compile-time options: HAS_TIMES PERLIO_LAYERS PERL_COPY_ON_WRITE
+                        PERL_DONT_CREATE_GVSV
+                        PERL_HASH_FUNC_ONE_AT_A_TIME_HARD PERL_MALLOC_WRAP
+                        PERL_PRESERVE_IVUV USE_64_BIT_ALL USE_64_BIT_INT
+                        USE_LARGE_FILES USE_LOCALE USE_LOCALE_COLLATE
+                        USE_LOCALE_CTYPE USE_LOCALE_NUMERIC USE_LOCALE_TIME
+                        USE_PERLIO USE_PERL_ATOF
+  Built under freebsd
+  Compiled at Jul 29 2017 11:20:18
+  %ENV:
+    PERL5LIB="/home/cpansand/.cpan/build/2020100722/IPC-System-Options-0.338-0UjcFj/blib/arch:/home/cpansand/.cpan/build/2020100722/IPC-System-Options-0.338-0UjcFj/blib/lib:/home/cpansand/.cpan/build/2020100722/Proc-ChildError-0.04-UhxcoO/blib/arch:/home/cpansand/.cpan/build/2020100722/Proc-ChildError-0.04-UhxcoO/blib/lib:/home/cpansand/.cpan/build/2020100722/String-ShellQuote-1.04-djyvxI/blib/arch:/home/cpansand/.cpan/build/2020100722/String-ShellQuote-1.04-djyvxI/blib/lib:/home/cpansand/.cpan/build/2020100722/File-Temp-0.2311-ZRLJPe/blib/arch:/home/cpansand/.cpan/build/2020100722/File-Temp-0.2311-ZRLJPe/blib/lib:/home/cpansand/.cpan/build/2020100722/IPC-Run-20200505.0-txInFJ/blib/arch:/home/cpansand/.cpan/build/2020100722/IPC-Run-20200505.0-txInFJ/blib/lib"
+    PERL5OPT=""
+    PERL5_CPANPLUS_IS_RUNNING="66537"
+    PERL5_CPAN_IS_RUNNING="66537"
+    PERL5_CPAN_IS_RUNNING_IN_RECURSION="95963,66537"
+    PERLDOC="-MPod::Perldoc::ToTextOverstrike"
+    PERL_BATCH="yes"
+    PERL_CANARY_STABILITY_NOPROMPT="1"
+    PERL_CPAN_REPORTER_CONFIG="/var/tmp/cpansmoker-1023/2020100714/cpanreporter_000_config.ini"
+    PERL_EXTUTILS_AUTOINSTALL="--defaultdeps"
+  @INC:
+    /home/cpansand/.cpan/build/2020100722/IPC-System-Options-0.338-0UjcFj/blib/arch
+    /home/cpansand/.cpan/build/2020100722/IPC-System-Options-0.338-0UjcFj/blib/lib
+    /home/cpansand/.cpan/build/2020100722/Proc-ChildError-0.04-UhxcoO/blib/arch
+    /home/cpansand/.cpan/build/2020100722/Proc-ChildError-0.04-UhxcoO/blib/lib
+    /home/cpansand/.cpan/build/2020100722/String-ShellQuote-1.04-djyvxI/blib/arch
+    /home/cpansand/.cpan/build/2020100722/String-ShellQuote-1.04-djyvxI/blib/lib
+    /home/cpansand/.cpan/build/2020100722/File-Temp-0.2311-ZRLJPe/blib/arch
+    /home/cpansand/.cpan/build/2020100722/File-Temp-0.2311-ZRLJPe/blib/lib
+    /home/cpansand/.cpan/build/2020100722/IPC-Run-20200505.0-txInFJ/blib/arch
+    /home/cpansand/.cpan/build/2020100722/IPC-Run-20200505.0-txInFJ/blib/lib
+    /usr/perl5.24.2p/lib/site_perl/5.24.2/amd64-freebsd
+    /usr/perl5.24.2p/lib/site_perl/5.24.2
+    /usr/perl5.24.2p/lib/5.24.2/amd64-freebsd
+    /usr/perl5.24.2p/lib/5.24.2
+    .
+</pre>
+
+        </main>
+
+        <footer>
+            <p>
+            CPAN::Testers::Web v0.001 is powered by <a href="http://mojolicious.org">Mojolicious</a><br />
+            All data and statistics are copyright © 1999-2018 CPAN Testers, and available under the <a href="https://opensource.org/licenses/Artistic-2.0">Artistic License 2.0</a>. Comments and design patches to admin@cpantesters.org.
+            </p>
+
+            <p>
+            The CPAN Testers Family: <br />
+              <a href="http://blog.cpantesters.org"     title="CPAN Testers Blog"       >Blog</a>         •
+              <a href="http://www.cpantesters.org"      title="CPAN Testers Reports"    >Reports</a>      •
+              <a href="http://wiki.cpantesters.org"     title="CPAN Testers Wiki"       >Wiki</a>         •
+              <a href="http://stats.cpantesters.org"    title="CPAN Testers Statistics" >Statistics</a>   •
+              <a href="http://pass.cpantesters.org"     title="CPAN Testers PASS Matrix">PASS Matrix</a>  •
+              <a href="http://prefs.cpantesters.org"    title="CPAN Testers Preferences">Preferences</a>  •
+              <a href="http://metabase.cpantesters.org" title="CPAN Testers Metabase"   >Metabase</a>     •
+              <a href="http://devel.cpantesters.org"    title="CPAN Testers Development">Development</a>  •
+              <a href="http://deps.cpantesters.org"     title="CPAN Dependencies"       >Dependencies</a> •
+              <a href="http://matrix.cpantesters.org"   title="CPAN Testers Matrix"     >Matrix</a>       •
+              <a href="http://analysis.cpantesters.org" title="CPAN Testers Analysis"   >Analysis</a>     •
+              <a href="http://admin.cpantesters.org"    title="CPAN Testers Admin"      >Admin</a>
+            </p>
+            <p>
+            CPAN Testers, supporting the Perl programming language since 1999.
+            </p>
+        </footer>
+
+    </body>
+</html>

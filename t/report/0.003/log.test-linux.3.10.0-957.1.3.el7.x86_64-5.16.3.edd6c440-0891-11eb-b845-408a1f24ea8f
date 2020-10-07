@@ -1,0 +1,314 @@
+From <strong>Slaven Rezić (SREZIC)</strong>
+Subject: <strong>PASS App-PlatformInfo-0.003 5.16.3 GNU/Linux</strong>
+Date: <strong>2020-10-07T11:40:41Z</strong>
+
+This distribution has been tested as part of the CPAN Testers
+project, supporting the Perl programming language.  See
+http://wiki.cpantesters.org/ for more information or email
+questions to cpan-testers-discuss@perl.org
+
+
+--
+Dear perlancar,
+
+This is a computer-generated report for App-PlatformInfo-0.003
+on perl 5.16.3, created by CPAN-Reporter-1.2011.
+
+Thank you for uploading your work to CPAN.  Congratulations!
+All tests were successful.
+
+Sections of this report:
+
+    * Tester comments
+    * Program output
+    * Prerequisites
+    * Environment and other context
+
+------------------------------
+TESTER COMMENTS
+------------------------------
+
+Additional comments from tester:
+
+none provided
+
+------------------------------
+PROGRAM OUTPUT
+------------------------------
+
+Output from '/usr/bin/make test':
+
+PERL_DL_NONLAZY=1 /usr/bin/perl "-MExtUtils::Command::MM" "-e" "test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ........... ok
+# Output of platform-info: {
+#   'archname' => 'x86_64',
+#   'codename' => 'Core',
+#   'is32bit' => 0,
+#   'is64bit' => 1,
+#   'kernel' => 'linux-3.10.0-1127.19.1.el7.x86_64',
+#   'kname' => 'Linux',
+#   'kvers' => '3.10.0-1127.19.1.el7.x86_64',
+#   'osflag' => 'linux',
+#   'oslabel' => 'CentOS',
+#   'osname' => 'GNU/Linux',
+#   'osvers' => '7.8.2003',
+#   'source' => {
+#                 'cat /etc/.issue' => '',
+#                 'cat /etc/issue' => '\\S
+# Kernel \\r on an \\m',
+#                 'lsb_release -a' => 'LSB Version:	:core-4.1-amd64:core-4.1-noarch
+# Distributor ID:	CentOS
+# Description:	CentOS Linux release 7.8.2003 (Core)
+# Release:	7.8.2003
+# Codename:	Core',
+#                 'uname -a' => 'Linux cloud3.bbbike.org 3.10.0-1127.19.1.el7.x86_64 #1 SMP Tue Aug 25 17:23:54 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux',
+#                 'uname -m' => 'x86_64',
+#                 'uname -o' => 'GNU/Linux',
+#                 'uname -r' => '3.10.0-1127.19.1.el7.x86_64',
+#                 'uname -s' => 'Linux'
+#               }
+# }
+t/01-basic.t ............. ok
+t/author-critic.t ........ skipped: these tests are for testing by the author
+t/author-pod-coverage.t .. skipped: these tests are for testing by the author
+t/author-pod-syntax.t .... skipped: these tests are for testing by the author
+All tests successful.
+Files=5, Tests=3,  1 wallclock secs ( 0.04 usr  0.01 sys +  0.16 cusr  0.09 csys =  0.30 CPU)
+Result: PASS
+
+------------------------------
+PREREQUISITES
+------------------------------
+
+Prerequisite modules loaded:
+
+requires:
+
+    Module               Need  Have 
+    -------------------- ----- -----
+    Data::Dumper         0     2.145
+
+build_requires:
+
+    Module               Need  Have 
+    -------------------- ----- -----
+    ExtUtils::MakeMaker  0     6.68 
+    File::Spec           0     3.40 
+    FindBin              0     1.51 
+    IO::Handle           0     1.33 
+    IPC::Open3           0     1.12 
+    IPC::System::Options 0.335 0.338
+    strict               0     1.07 
+    Test::More           0.98  0.98 
+    warnings             0     1.13 
+
+configure_requires:
+
+    Module               Need  Have 
+    -------------------- ----- -----
+    ExtUtils::MakeMaker  0     6.68 
+
+
+------------------------------
+ENVIRONMENT AND OTHER CONTEXT
+------------------------------
+
+Environment variables:
+
+    LANG = en_US.UTF-8
+    PATH = /usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/cpansand/bin/linux-gnu:/home/cpansand/bin/sh:/home/cpansand/bin:/usr/games:/home/cpansand/devel:/home/eserte/src/srezic-misc/scripts
+    PERL5LIB = /home/cpansand/.cpan/build/2020100713/IPC-System-Options-0.338-VkOnn9/blib/arch:/home/cpansand/.cpan/build/2020100713/IPC-System-Options-0.338-VkOnn9/blib/lib:/home/cpansand/.cpan/build/2020100713/Proc-ChildError-0.04-df3Nzx/blib/arch:/home/cpansand/.cpan/build/2020100713/Proc-ChildError-0.04-df3Nzx/blib/lib:/home/cpansand/.cpan/build/2020100713/File-Temp-0.2311-Jbf4VC/blib/arch:/home/cpansand/.cpan/build/2020100713/File-Temp-0.2311-Jbf4VC/blib/lib:/home/cpansand/.cpan/build/2020100713/IPC-Run-20200505.0-k6H4Vg/blib/arch:/home/cpansand/.cpan/build/2020100713/IPC-Run-20200505.0-k6H4Vg/blib/lib:/home/cpansand/.cpan/build/2020100713/Test-Exception-0.43-yNAb9t/blib/arch:/home/cpansand/.cpan/build/2020100713/Test-Exception-0.43-yNAb9t/blib/lib:/home/cpansand/.cpan/build/2020100713/Sub-Uplevel-0.2800-1YY18U/blib/arch:/home/cpansand/.cpan/build/2020100713/Sub-Uplevel-0.2800-1YY18U/blib/lib
+    PERL5OPT = 
+    PERL5_CPANPLUS_IS_RUNNING = 16105
+    PERL5_CPAN_IS_RUNNING = 16105
+    PERL5_CPAN_IS_RUNNING_IN_RECURSION = 7475,16105
+    PERLDOC = -MPod::Perldoc::ToTextOverstrike
+    PERL_BATCH = yes
+    PERL_CANARY_STABILITY_NOPROMPT = 1
+    PERL_CPAN_REPORTER_CONFIG = /var/tmp/cpansmoker-1023/2020100713/cpanreporter_000_config.ini
+    PERL_EXTUTILS_AUTOINSTALL = --defaultdeps
+    SHELL = /usr/bin/zsh
+    TERM = screen
+    TMPDIR = /var/tmp/cpansmoker-1023/2020100713
+
+Perl special variables (and OS-specific diagnostics, for MSWin32):
+
+    $^X = /usr/bin/perl
+    $UID/$EUID = 1023 / 1023
+    $GID = 1023 1023
+    $EGID = 1023 1023
+
+Perl module toolchain versions installed:
+
+    Module              Have    
+    ------------------- --------
+    CPAN                1.9800  
+    CPAN::Meta          2.120921
+    Cwd                 3.40    
+    ExtUtils::CBuilder  0.280206
+    ExtUtils::Command   1.17    
+    ExtUtils::Install   1.58    
+    ExtUtils::MakeMaker 6.68    
+    ExtUtils::Manifest  1.61    
+    ExtUtils::ParseXS   3.18    
+    File::Spec          3.40    
+    JSON                n/a     
+    JSON::PP            2.27202 
+    Module::Build       0.4005  
+    Module::Signature   n/a     
+    Parse::CPAN::Meta   1.4404  
+    Test::Harness       3.28    
+    Test::More          0.98    
+    YAML                n/a     
+    YAML::Syck          1.27    
+    version             0.9907  
+
+
+--
+
+Summary of my perl5 (revision 5 version 16 subversion 3) configuration:
+   
+  Platform:
+    osname=linux, osvers=3.10.0-957.1.3.el7.x86_64, archname=x86_64-linux-thread-multi
+    uname='linux x86-02.bsys.centos.org 3.10.0-957.1.3.el7.x86_64 #1 smp thu nov 29 14:49:43 utc 2018 x86_64 x86_64 x86_64 gnulinux '
+    config_args='-des -Doptimize=-O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic -Dccdlflags=-Wl,--enable-new-dtags -Dlddlflags=-shared -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic -Wl,-z,relro  -DDEBUGGING=-g -Dversion=5.16.3 -Dmyhostname=localhost -Dperladmin=root@localhost -Dcc=gcc -Dcf_by=Red Hat, Inc. -Dprefix=/usr -Dvendorprefix=/usr -Dsiteprefix=/usr/local -Dsitelib=/usr/local/share/perl5 -Dsitearch=/usr/local/lib64/perl5 -Dprivlib=/usr/share/perl5 -Dvendorlib=/usr/share/perl5/vendor_perl -Darchlib=/usr/lib64/perl5 -Dvendorarch=/usr/lib64/perl5/vendor_perl -Darchname=x86_64-linux-thread-multi -Dlibpth=/usr/local/lib64 /lib64 /usr/lib64 -Duseshrplib -Dusethreads -Duseithreads -Dusedtrace=/usr/bin/dtrace -Duselargefiles -Dd_semctl_semun -Di_db -Ui_ndbm -Di_gdbm -Di_shadow -Di_syslog -Dman3ext=3pm -Duseperlio -Dinstallusrbinperl=n -Ubincompat5005 -Uversiononly -Dpager=/usr/bin/less -isr -Dd_gethostent_r_proto -Ud_endhostent_r_proto -Ud_sethostent_r_proto -Ud_endprotoent_r_proto -Ud_setprotoent_r_proto -Ud_endservent_r_proto -Ud_setservent_r_proto -Dscriptdir=/usr/bin -Dusesitecustomize'
+    hint=recommended, useposix=true, d_sigaction=define
+    useithreads=define, usemultiplicity=define
+    useperlio=define, d_sfio=undef, uselargefiles=define, usesocks=undef
+    use64bitint=define, use64bitall=define, uselongdouble=undef
+    usemymalloc=n, bincompat5005=undef
+  Compiler:
+    cc='gcc', ccflags ='-D_REENTRANT -D_GNU_SOURCE -fno-strict-aliasing -pipe -fstack-protector -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    optimize='-O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic',
+    cppflags='-D_REENTRANT -D_GNU_SOURCE -fno-strict-aliasing -pipe -fstack-protector -I/usr/local/include'
+    ccversion='', gccversion='4.8.5 20150623 (Red Hat 4.8.5-39)', gccosandvers=''
+    intsize=4, longsize=8, ptrsize=8, doublesize=8, byteorder=12345678
+    d_longlong=define, longlongsize=8, d_longdbl=define, longdblsize=16
+    ivtype='long', ivsize=8, nvtype='double', nvsize=8, Off_t='off_t', lseeksize=8
+    alignbytes=8, prototype=define
+  Linker and Libraries:
+    ld='gcc', ldflags =' -fstack-protector'
+    libpth=/usr/local/lib64 /lib64 /usr/lib64
+    libs=-lresolv -lnsl -lgdbm -ldb -ldl -lm -lcrypt -lutil -lpthread -lc -lgdbm_compat
+    perllibs=-lresolv -lnsl -ldl -lm -lcrypt -lutil -lpthread -lc
+    libc=, so=so, useshrplib=true, libperl=libperl.so
+    gnulibc_version='2.17'
+  Dynamic Linking:
+    dlsrc=dl_dlopen.xs, dlext=so, d_dlsymun=undef, ccdlflags='-Wl,--enable-new-dtags -Wl,-rpath,/usr/lib64/perl5/CORE'
+    cccdlflags='-fPIC', lddlflags='-shared -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -Wl,-z,relro '
+
+
+Characteristics of this binary (from libperl): 
+  Compile-time options: HAS_TIMES MULTIPLICITY PERLIO_LAYERS
+                        PERL_DONT_CREATE_GVSV PERL_IMPLICIT_CONTEXT
+                        PERL_MALLOC_WRAP PERL_PRESERVE_IVUV USE_64_BIT_ALL
+                        USE_64_BIT_INT USE_ITHREADS USE_LARGE_FILES
+                        USE_LOCALE USE_LOCALE_COLLATE USE_LOCALE_CTYPE
+                        USE_LOCALE_NUMERIC USE_PERLIO USE_PERL_ATOF
+                        USE_REENTRANT_API USE_SITECUSTOMIZE
+  Locally applied patches:
+	Fedora Patch1: Removes date check, Fedora/RHEL specific
+	Fedora Patch3: support for libdir64
+	Fedora Patch4: use libresolv instead of libbind
+	Fedora Patch5: USE_MM_LD_RUN_PATH
+	Fedora Patch6: Skip hostname tests, due to builders not being network capable
+	Fedora Patch7: Dont run one io test due to random builder failures
+	Fedora Patch9: Fix find2perl to translate ? glob properly (RT#113054)
+	Fedora Patch10: Fix broken atof (RT#109318)
+	Fedora Patch13: Clear $@ before "do" I/O error (RT#113730)
+	Fedora Patch14: Do not truncate syscall() return value to 32 bits (RT#113980)
+	Fedora Patch15: Override the Pod::Simple::parse_file (CPANRT#77530)
+	Fedora Patch16: Do not leak with attribute on my variable (RT#114764)
+	Fedora Patch17: Allow operator after numeric keyword argument (RT#105924)
+	Fedora Patch18: Extend stack in File::Glob::glob, (RT#114984)
+	Fedora Patch19: Do not crash when vivifying $|
+	Fedora Patch20: Fix misparsing of maketext strings (CVE-2012-6329)
+	Fedora Patch21: Add NAME headings to CPAN modules (CPANRT#73396)
+	Fedora Patch22: Fix leaking tied hashes (RT#107000) [1]
+	Fedora Patch23: Fix leaking tied hashes (RT#107000) [2]
+	Fedora Patch24: Fix leaking tied hashes (RT#107000) [3]
+	Fedora Patch25: Fix dead lock in PerlIO after fork from thread (RT#106212)
+	Fedora Patch26: Make regexp safe in a signal handler (RT#114878)
+	Fedora Patch27: Update h2ph(1) documentation (RT#117647)
+	Fedora Patch28: Update pod2html(1) documentation (RT#117623)
+	Fedora Patch29: Document Math::BigInt::CalcEmu requires Math::BigInt (CPAN RT#85015)
+	RHEL Patch30: Use stronger algorithm needed for FIPS in t/op/crypt.t (RT#121591)
+	RHEL Patch31: Make *DBM_File desctructors thread-safe (RT#61912)
+	RHEL Patch32: Use stronger algorithm needed for FIPS in t/op/taint.t (RT#123338)
+	RHEL Patch33: Remove CPU-speed-sensitive test in Benchmark test
+	RHEL Patch34: Make File::Glob work with threads again
+	RHEL Patch35: Fix CRLF conversion in ASCII FTP upload (CPAN RT#41642)
+	RHEL Patch36: Do not leak the temp utf8 copy of namepv (CPAN RT#123786)
+	RHEL Patch37: Fix duplicating PerlIO::encoding when spawning threads (RT#31923)
+	RHEL Patch38: Add SSL support to Net::SMTP (CPAN RT#93823) [1]
+	RHEL Patch39: Add SSL support to Net::SMTP (CPAN RT#93823) [2]
+	RHEL Patch40: Add SSL support to Net::SMTP (CPAN RT#93823) [3]
+	RHEL Patch41: Add SSL support to Net::SMTP (CPAN RT#93823) [4]
+	RHEL Patch42: Do not overload ".." in Math::BigInt (CPAN RT#80182)
+	RHEL Patch43: Fix CVE-2018-18311 Integer overflow leading to buffer overflow
+	RHEL Patch44: Fix a spurious timeout in Net::FTP::close (CPAN RT#18504)
+  Built under linux
+  Compiled at Apr  2 2020 01:18:37
+  %ENV:
+    PERL5LIB="/home/cpansand/.cpan/build/2020100713/IPC-System-Options-0.338-VkOnn9/blib/arch:/home/cpansand/.cpan/build/2020100713/IPC-System-Options-0.338-VkOnn9/blib/lib:/home/cpansand/.cpan/build/2020100713/Proc-ChildError-0.04-df3Nzx/blib/arch:/home/cpansand/.cpan/build/2020100713/Proc-ChildError-0.04-df3Nzx/blib/lib:/home/cpansand/.cpan/build/2020100713/File-Temp-0.2311-Jbf4VC/blib/arch:/home/cpansand/.cpan/build/2020100713/File-Temp-0.2311-Jbf4VC/blib/lib:/home/cpansand/.cpan/build/2020100713/IPC-Run-20200505.0-k6H4Vg/blib/arch:/home/cpansand/.cpan/build/2020100713/IPC-Run-20200505.0-k6H4Vg/blib/lib:/home/cpansand/.cpan/build/2020100713/Test-Exception-0.43-yNAb9t/blib/arch:/home/cpansand/.cpan/build/2020100713/Test-Exception-0.43-yNAb9t/blib/lib:/home/cpansand/.cpan/build/2020100713/Sub-Uplevel-0.2800-1YY18U/blib/arch:/home/cpansand/.cpan/build/2020100713/Sub-Uplevel-0.2800-1YY18U/blib/lib"
+    PERL5OPT=""
+    PERL5_CPANPLUS_IS_RUNNING="16105"
+    PERL5_CPAN_IS_RUNNING="16105"
+    PERL5_CPAN_IS_RUNNING_IN_RECURSION="7475,16105"
+    PERLDOC="-MPod::Perldoc::ToTextOverstrike"
+    PERL_BATCH="yes"
+    PERL_CANARY_STABILITY_NOPROMPT="1"
+    PERL_CPAN_REPORTER_CONFIG="/var/tmp/cpansmoker-1023/2020100713/cpanreporter_000_config.ini"
+    PERL_EXTUTILS_AUTOINSTALL="--defaultdeps"
+  @INC:
+    /home/cpansand/.cpan/build/2020100713/IPC-System-Options-0.338-VkOnn9/blib/arch
+    /home/cpansand/.cpan/build/2020100713/IPC-System-Options-0.338-VkOnn9/blib/lib
+    /home/cpansand/.cpan/build/2020100713/Proc-ChildError-0.04-df3Nzx/blib/arch
+    /home/cpansand/.cpan/build/2020100713/Proc-ChildError-0.04-df3Nzx/blib/lib
+    /home/cpansand/.cpan/build/2020100713/File-Temp-0.2311-Jbf4VC/blib/arch
+    /home/cpansand/.cpan/build/2020100713/File-Temp-0.2311-Jbf4VC/blib/lib
+    /home/cpansand/.cpan/build/2020100713/IPC-Run-20200505.0-k6H4Vg/blib/arch
+    /home/cpansand/.cpan/build/2020100713/IPC-Run-20200505.0-k6H4Vg/blib/lib
+    /home/cpansand/.cpan/build/2020100713/Test-Exception-0.43-yNAb9t/blib/arch
+    /home/cpansand/.cpan/build/2020100713/Test-Exception-0.43-yNAb9t/blib/lib
+    /home/cpansand/.cpan/build/2020100713/Sub-Uplevel-0.2800-1YY18U/blib/arch
+    /home/cpansand/.cpan/build/2020100713/Sub-Uplevel-0.2800-1YY18U/blib/lib
+    /usr/local/lib64/perl5
+    /usr/local/share/perl5
+    /usr/lib64/perl5/vendor_perl
+    /usr/share/perl5/vendor_perl
+    /usr/lib64/perl5
+    /usr/share/perl5
+    .
+</pre>
+
+        </main>
+
+        <footer>
+            <p>
+            CPAN::Testers::Web v0.001 is powered by <a href="http://mojolicious.org">Mojolicious</a><br />
+            All data and statistics are copyright © 1999-2018 CPAN Testers, and available under the <a href="https://opensource.org/licenses/Artistic-2.0">Artistic License 2.0</a>. Comments and design patches to admin@cpantesters.org.
+            </p>
+
+            <p>
+            The CPAN Testers Family: <br />
+              <a href="http://blog.cpantesters.org"     title="CPAN Testers Blog"       >Blog</a>         •
+              <a href="http://www.cpantesters.org"      title="CPAN Testers Reports"    >Reports</a>      •
+              <a href="http://wiki.cpantesters.org"     title="CPAN Testers Wiki"       >Wiki</a>         •
+              <a href="http://stats.cpantesters.org"    title="CPAN Testers Statistics" >Statistics</a>   •
+              <a href="http://pass.cpantesters.org"     title="CPAN Testers PASS Matrix">PASS Matrix</a>  •
+              <a href="http://prefs.cpantesters.org"    title="CPAN Testers Preferences">Preferences</a>  •
+              <a href="http://metabase.cpantesters.org" title="CPAN Testers Metabase"   >Metabase</a>     •
+              <a href="http://devel.cpantesters.org"    title="CPAN Testers Development">Development</a>  •
+              <a href="http://deps.cpantesters.org"     title="CPAN Dependencies"       >Dependencies</a> •
+              <a href="http://matrix.cpantesters.org"   title="CPAN Testers Matrix"     >Matrix</a>       •
+              <a href="http://analysis.cpantesters.org" title="CPAN Testers Analysis"   >Analysis</a>     •
+              <a href="http://admin.cpantesters.org"    title="CPAN Testers Admin"      >Admin</a>
+            </p>
+            <p>
+            CPAN Testers, supporting the Perl programming language since 1999.
+            </p>
+        </footer>
+
+    </body>
+</html>
