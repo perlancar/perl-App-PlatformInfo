@@ -4,6 +4,7 @@ require Data::Dumper;
 require Devel::Platform::Info;
 
 $Data::Dumper::Sortkeys = 1;
+$Data::Dumper::Terse = 1;
 print Data::Dumper::Dumper(Devel::Platform::Info->new->get_info);
 
 # ABSTRACT: Print platform information gathered by Devel::Platform::Info
