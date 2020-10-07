@@ -1,15 +1,21 @@
 #!perl
 
+# basically we just want to collect output of platform-info scripts on various
+# testing machines
+
 use strict;
 use warnings;
 use FindBin '$Bin';
-use Test::More 0.98;
+use Test::More;
 
-use IPC::System::Options 'backtick';
+use IPC::Open2;
 
-# basically we just want to collect output of platform-info scripts on various
-# testing machines
-diag "Output of platform-info: ", backtick({shell=>0}, $^X, "$Bin/../script/platform-info");
+my $pid = open2 my $chld_out, my $child_in, $^X, "$Bin/../script/platform-info";
+my $output = do { local $/; scalar <$chld_out> };
+waitpid $pid, 0;
+my $child_exit = $? >> 8;
+
+diag "Output of platform-info (exit code $child_exit): ", $output;
 
 ok 1;
 
