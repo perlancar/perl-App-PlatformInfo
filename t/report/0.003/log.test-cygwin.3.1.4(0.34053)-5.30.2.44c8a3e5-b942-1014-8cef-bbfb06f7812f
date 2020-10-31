@@ -1,0 +1,335 @@
+From <strong>David Solimano</strong>
+Subject: <strong>PASS App-PlatformInfo-0.003 5.30.2 Windows (Cygwin)</strong>
+Date: <strong>2020-10-07T12:47:00Z</strong>
+
+This distribution has been tested as part of the CPAN Testers
+project, supporting the Perl programming language.  See
+http://wiki.cpantesters.org/ for more information or email
+questions to cpan-testers-discuss@perl.org
+
+
+--
+Dear perlancar,
+
+This is a computer-generated report for App-PlatformInfo-0.003
+on perl 5.30.2, created by CPAN-Reporter-1.2018.
+
+Thank you for uploading your work to CPAN.  Congratulations!
+All tests were successful.
+
+Sections of this report:
+
+    * Tester comments
+    * Program output
+    * Prerequisites
+    * Environment and other context
+
+------------------------------
+TESTER COMMENTS
+------------------------------
+
+Additional comments from tester:
+
+this report is from an automated smoke testing program
+and was not reviewed by a human for accuracy
+
+------------------------------
+PROGRAM OUTPUT
+------------------------------
+
+Output from 'make test':
+
+PERL_DL_NONLAZY=1 "/usr/bin/perl.exe" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ........... ok
+# Output of platform-info: {
+#   'archname' => 'x86_64',
+#   'is32bit' => 0,
+#   'is64bit' => 1,
+#   'osflag' => 'cygwin',
+#   'oslabel' => 'Unrecognised - please file an RT case',
+#   'osvers' => '10.0.18363.2',
+#   'source' => {
+#                 'GetOSVersion' => [
+#                                     '',
+#                                     10,
+#                                     0,
+#                                     18363,
+#                                     2,
+#                                     0,
+#                                     0,
+#                                     256,
+#                                     1
+#                                   ],
+#                 'uname' => [
+#                              'CYGWIN_NT-10.0-18363',
+#                              'WNYC011148',
+#                              '3.1.4-340.x86_64',
+#                              '2020-02-19 08:49 UTC',
+#                              'x86_64'
+#                            ]
+#               },
+#   'wow64' => 0
+# }
+t/01-basic.t ............. ok
+t/author-critic.t ........ skipped: these tests are for testing by the author
+t/author-pod-coverage.t .. skipped: these tests are for testing by the author
+t/author-pod-syntax.t .... skipped: these tests are for testing by the author
+All tests successful.
+Files=5, Tests=3,  1 wallclock secs ( 0.02 usr  0.06 sys +  0.37 cusr  0.84 csys =  1.29 CPU)
+Result: PASS
+
+------------------------------
+PREREQUISITES
+------------------------------
+
+Prerequisite modules loaded:
+
+requires:
+
+    Module               Need  Have    
+    -------------------- ----- --------
+    Data::Dumper         0     2.174   
+
+build_requires:
+
+    Module               Need  Have    
+    -------------------- ----- --------
+    ExtUtils::MakeMaker  0     7.44    
+    File::Spec           0     3.78    
+    FindBin              0     1.51    
+    IO::Handle           0     1.40    
+    IPC::Open3           0     1.20    
+    IPC::System::Options 0.335 0.338   
+    strict               0     1.11    
+    Test::More           0.98  1.302175
+    warnings             0     1.44    
+
+configure_requires:
+
+    Module               Need  Have    
+    -------------------- ----- --------
+    ExtUtils::MakeMaker  0     7.44    
+
+
+------------------------------
+ENVIRONMENT AND OTHER CONTEXT
+------------------------------
+
+Environment variables:
+
+    AUTOMATED_TESTING = 1
+    COMSPEC = C:\WINDOWS\system32\cmd.exe
+    LANG = en_US.UTF-8
+    NUMBER_OF_PROCESSORS = 8
+    PATH = /usr/local/bin:/usr/bin:/cygdrive/c/WINDOWS/system32:/cygdrive/c/WINDOWS:/cygdrive/c/WINDOWS/System32/Wbem:/cygdrive/c/WINDOWS/System32/WindowsPowerShell/v1.0:/cygdrive/c/WINDOWS/System32/OpenSSH:/cygdrive/c/Program Files/TortoiseSVN/bin:/cygdrive/c/RV/BIN:/cygdrive/c/Strawberry/c/bin:/cygdrive/c/Strawberry/perl/site/bin:/cygdrive/c/Strawberry/perl/bin:/cygdrive/c/Program Files/dotnet:/cygdrive/c/Program Files/Microsoft SQL Server/130/Tools/Binn:/cygdrive/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn:/cygdrive/c/Program Files (x86)/Microsoft SQL Server/150/DTS/Binn:/cygdrive/c/Program Files/SlikSvn/bin:/cygdrive/c/Users/solimanod/AppData/Local/Microsoft/WindowsApps
+    PERL5LIB = /home/solimanod/.cpan/build/Data-Dmp-0.240-0/blib/arch:/home/solimanod/.cpan/build/Data-Dmp-0.240-0/blib/lib:/home/solimanod/.cpan/build/Regexp-Stringify-0.06-0/blib/arch:/home/solimanod/.cpan/build/Regexp-Stringify-0.06-0/blib/lib:/home/solimanod/.cpan/build/Log-ger-0.037-0/blib/arch:/home/solimanod/.cpan/build/Log-ger-0.037-0/blib/lib:/home/solimanod/.cpan/build/IPC-System-Options-0.338-0/blib/arch:/home/solimanod/.cpan/build/IPC-System-Options-0.338-0/blib/lib:/home/solimanod/.cpan/build/String-ShellQuote-1.04-0/blib/arch:/home/solimanod/.cpan/build/String-ShellQuote-1.04-0/blib/lib:/home/solimanod/.cpan/build/Proc-ChildError-0.04-0/blib/arch:/home/solimanod/.cpan/build/Proc-ChildError-0.04-0/blib/lib
+    PERL5OPT = 
+    PERL5_CPANPLUS_IS_RUNNING = 58094
+    PERL5_CPAN_IS_RUNNING = 58094
+    PERL5_CPAN_IS_RUNNING_IN_RECURSION = 24785,58094
+    PERL_CR_SMOKER_CURRENT = App-PlatformInfo-0.003
+    PERL_EXTUTILS_AUTOINSTALL = --defaultdeps
+    PERL_MM_USE_DEFAULT = 1
+    PERL_USE_UNSAFE_INC = 1
+    PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 13, GenuineIntel
+    SHELL = /bin/bash
+    TEMP = /tmp
+    TERM = xterm
+
+Perl special variables (and OS-specific diagnostics, for MSWin32):
+
+    $^X = /usr/bin/perl
+    $UID/$EUID = 1222856 / 1222856
+    $GID = 1049089 1049089 555 545 559 14 4 11 15 4095 66048 1395145 1231332 1425386 1391115 1413001 1411909 1412494 1389702 1110237 1417682 1391333 1406572 1425390 1389528 1404926 1407957 1390371 1425384 1413376 1389547 1394012 1417205 1395231 1432903 1417681 1405122 1392391 1392334 1417368 1391057 1321713 1395423 1389592 1399936 1433017 1411964 1406894 1389176 1425082 1230946 1390011 1320982 1389527 1395210 1413378 1291971 1389747 1291952 1425382 1321739 1413351 1391275 1391014 1406893 1275909 1404927 1110272 1433010 1100291 1394449 1394915 1389439 1395569 1222766 1222819 1222732 1114690 1231058 1275974 1292197 1222743 1222741 1389953 1233131 1300831 1052870 1050371 1049701 1049741 1049748 1049779 1049783 1058315 1051691 1049994 1050059 1052837 1235940 1393994 1425294 1054462 1404982 1291964 1291449 1388773 1395282 1291954 1291893 1403164 1276307 1425681 1292037 1158631 1292385 1291940 1054217 1403700 1417070 1389585 1292046 1231333 1222696 1413320 1404984 1291966 1291957 1063805 1289842 1388864 1399756 1388423 1291953 1276165 1049735 1053718 1074460 1082199 1069023 1058356 1236080 1236107 401408
+    $EGID = 1049089 1049089 555 545 559 14 4 11 15 4095 66048 1395145 1231332 1425386 1391115 1413001 1411909 1412494 1389702 1110237 1417682 1391333 1406572 1425390 1389528 1404926 1407957 1390371 1425384 1413376 1389547 1394012 1417205 1395231 1432903 1417681 1405122 1392391 1392334 1417368 1391057 1321713 1395423 1389592 1399936 1433017 1411964 1406894 1389176 1425082 1230946 1390011 1320982 1389527 1395210 1413378 1291971 1389747 1291952 1425382 1321739 1413351 1391275 1391014 1406893 1275909 1404927 1110272 1433010 1100291 1394449 1394915 1389439 1395569 1222766 1222819 1222732 1114690 1231058 1275974 1292197 1222743 1222741 1389953 1233131 1300831 1052870 1050371 1049701 1049741 1049748 1049779 1049783 1058315 1051691 1049994 1050059 1052837 1235940 1393994 1425294 1054462 1404982 1291964 1291449 1388773 1395282 1291954 1291893 1403164 1276307 1425681 1292037 1158631 1292385 1291940 1054217 1403700 1417070 1389585 1292046 1231333 1222696 1413320 1404984 1291966 1291957 1063805 1289842 1388864 1399756 1388423 1291953 1276165 1049735 1053718 1074460 1082199 1069023 1058356 1236080 1236107 401408
+
+Perl module toolchain versions installed:
+
+    Module              Have    
+    ------------------- --------
+    CPAN                2.22    
+    CPAN::Meta          2.150010
+    Cwd                 3.78    
+    ExtUtils::CBuilder  0.280234
+    ExtUtils::Command   7.44    
+    ExtUtils::Install   2.14    
+    ExtUtils::MakeMaker 7.44    
+    ExtUtils::Manifest  1.72    
+    ExtUtils::ParseXS   3.40    
+    File::Spec          3.78    
+    JSON                4.02    
+    JSON::PP            4.04    
+    Module::Build       0.4231  
+    Module::Signature   0.83    
+    Parse::CPAN::Meta   2.150010
+    Test::Harness       3.42    
+    Test::More          1.302175
+    YAML                1.30    
+    YAML::Syck          n/a     
+    version             0.9924  
+
+
+--
+
+Summary of my perl5 (revision 5 version 30 subversion 2) configuration:
+   
+  Platform:
+    osname=cygwin
+    osvers=3.1.4(0.34053)
+    archname=x86_64-cygwin-threads-multi
+    uname='cygwin_nt-10.0 cygwinpro 3.1.4(0.34053) 2020-02-19 08:49 x86_64 cygwin '
+    config_args='-des -Dprefix=/usr -Dmksymlinks -Darchname=x86_64-cygwin-threads -Dlibperl=cygperl5_30.dll -Dcc=gcc -Dld=g++ -Accflags=-ggdb -O2 -pipe -Wall -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4 -fdebug-prefix-map=/mnt/share/cygpkgs/perl/perl.x86_64/build=/usr/src/debug/perl-5.30.2-1 -fdebug-prefix-map=/mnt/share/cygpkgs/perl/perl.x86_64/src/perl-5.30.2=/usr/src/debug/perl-5.30.2-1 -fwrapv'
+    hint=recommended
+    useposix=true
+    d_sigaction=define
+    useithreads=define
+    usemultiplicity=define
+    use64bitint=define
+    use64bitall=define
+    uselongdouble=undef
+    usemymalloc=n
+    default_inc_excludes_dot=define
+    bincompat5005=undef
+  Compiler:
+    cc='gcc'
+    ccflags ='-DPERL_USE_SAFE_PUTENV -U__STRICT_ANSI__ -D_GNU_SOURCE -ggdb -O2 -pipe -Wall -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4 -fdebug-prefix-map=/mnt/share/cygpkgs/perl/perl.x86_64/build=/usr/src/debug/perl-5.30.2-1 -fdebug-prefix-map=/mnt/share/cygpkgs/perl/perl.x86_64/src/perl-5.30.2=/usr/src/debug/perl-5.30.2-1 -fwrapv -fno-strict-aliasing'
+    optimize='-O3'
+    cppflags='-DPERL_USE_SAFE_PUTENV -U__STRICT_ANSI__ -D_GNU_SOURCE -ggdb -O2 -pipe -Wall -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4 -fdebug-prefix-map=/mnt/share/cygpkgs/perl/perl.x86_64/build=/usr/src/debug/perl-5.30.2-1 -fdebug-prefix-map=/mnt/share/cygpkgs/perl/perl.x86_64/src/perl-5.30.2=/usr/src/debug/perl-5.30.2-1 -fwrapv -fno-strict-aliasing'
+    ccversion=''
+    gccversion='9.2.0'
+    gccosandvers=''
+    intsize=4
+    longsize=8
+    ptrsize=8
+    doublesize=8
+    byteorder=12345678
+    doublekind=3
+    d_longlong=define
+    longlongsize=8
+    d_longdbl=define
+    longdblsize=16
+    longdblkind=3
+    ivtype='long'
+    ivsize=8
+    nvtype='double'
+    nvsize=8
+    Off_t='off_t'
+    lseeksize=8
+    alignbytes=8
+    prototype=define
+  Linker and Libraries:
+    ld='g++'
+    ldflags =' -Wl,--enable-auto-import -Wl,--export-all-symbols -Wl,--enable-auto-image-base -fstack-protector-strong'
+    libpth=/usr/lib
+    libs=-lpthread -lnsl -lgdbm -ldb -ldl -lcrypt -lgdbm_compat
+    perllibs=-lpthread -lnsl -ldl -lcrypt
+    libc=/usr/lib/libcygwin.a
+    so=dll
+    useshrplib=true
+    libperl=cygperl5_30.dll
+    gnulibc_version=''
+  Dynamic Linking:
+    dlsrc=dl_dlopen.xs
+    dlext=dll
+    d_dlsymun=undef
+    ccdlflags=' '
+    cccdlflags=' '
+    lddlflags=' --shared  -Wl,--enable-auto-import -Wl,--export-all-symbols -Wl,--enable-auto-image-base -fstack-protector-strong'
+
+
+Characteristics of this binary (from libperl): 
+  Compile-time options:
+    HAS_TIMES
+    MULTIPLICITY
+    PERLIO_LAYERS
+    PERL_COPY_ON_WRITE
+    PERL_DONT_CREATE_GVSV
+    PERL_IMPLICIT_CONTEXT
+    PERL_OP_PARENT
+    PERL_PRESERVE_IVUV
+    PERL_USE_SAFE_PUTENV
+    USE_64_BIT_ALL
+    USE_64_BIT_INT
+    USE_ITHREADS
+    USE_LARGE_FILES
+    USE_LOCALE
+    USE_LOCALE_COLLATE
+    USE_LOCALE_CTYPE
+    USE_LOCALE_NUMERIC
+    USE_LOCALE_TIME
+    USE_PERLIO
+    USE_PERL_ATOF
+    USE_REENTRANT_API
+    USE_THREAD_SAFE_LOCALE
+  Locally applied patches:
+    Cygwin: README
+    Cygwin: use auto-image-base instead of fixed DLL base address
+    Cygwin: modify hints
+    Cygwin: Configure correct libsearch
+    Cygwin: Configure correct libpth
+    Cygwin: Win32 correct UTF8 handling
+    Perl:   InvLists moved back to interpreter level
+  Built under cygwin
+  Compiled at Mar 15 2020 09:52:28
+  %ENV:
+    PERL5LIB="/home/solimanod/.cpan/build/Data-Dmp-0.240-0/blib/arch:/home/solimanod/.cpan/build/Data-Dmp-0.240-0/blib/lib:/home/solimanod/.cpan/build/Regexp-Stringify-0.06-0/blib/arch:/home/solimanod/.cpan/build/Regexp-Stringify-0.06-0/blib/lib:/home/solimanod/.cpan/build/Log-ger-0.037-0/blib/arch:/home/solimanod/.cpan/build/Log-ger-0.037-0/blib/lib:/home/solimanod/.cpan/build/IPC-System-Options-0.338-0/blib/arch:/home/solimanod/.cpan/build/IPC-System-Options-0.338-0/blib/lib:/home/solimanod/.cpan/build/String-ShellQuote-1.04-0/blib/arch:/home/solimanod/.cpan/build/String-ShellQuote-1.04-0/blib/lib:/home/solimanod/.cpan/build/Proc-ChildError-0.04-0/blib/arch:/home/solimanod/.cpan/build/Proc-ChildError-0.04-0/blib/lib"
+    PERL5OPT=""
+    PERL5_CPANPLUS_IS_RUNNING="58094"
+    PERL5_CPAN_IS_RUNNING="58094"
+    PERL5_CPAN_IS_RUNNING_IN_RECURSION="24785,58094"
+    PERL_CR_SMOKER_CURRENT="App-PlatformInfo-0.003"
+    PERL_EXTUTILS_AUTOINSTALL="--defaultdeps"
+    PERL_MM_USE_DEFAULT="1"
+    PERL_USE_UNSAFE_INC="1"
+  @INC:
+    /home/solimanod/.cpan/build/Data-Dmp-0.240-0/blib/arch
+    /home/solimanod/.cpan/build/Data-Dmp-0.240-0/blib/lib
+    /home/solimanod/.cpan/build/Regexp-Stringify-0.06-0/blib/arch
+    /home/solimanod/.cpan/build/Regexp-Stringify-0.06-0/blib/lib
+    /home/solimanod/.cpan/build/Log-ger-0.037-0/blib/arch
+    /home/solimanod/.cpan/build/Log-ger-0.037-0/blib/lib
+    /home/solimanod/.cpan/build/IPC-System-Options-0.338-0/blib/arch
+    /home/solimanod/.cpan/build/IPC-System-Options-0.338-0/blib/lib
+    /home/solimanod/.cpan/build/String-ShellQuote-1.04-0/blib/arch
+    /home/solimanod/.cpan/build/String-ShellQuote-1.04-0/blib/lib
+    /home/solimanod/.cpan/build/Proc-ChildError-0.04-0/blib/arch
+    /home/solimanod/.cpan/build/Proc-ChildError-0.04-0/blib/lib
+    /usr/local/lib/perl5/site_perl/5.30/x86_64-cygwin-threads
+    /usr/local/share/perl5/site_perl/5.30
+    /usr/lib/perl5/vendor_perl/5.30/x86_64-cygwin-threads
+    /usr/share/perl5/vendor_perl/5.30
+    /usr/lib/perl5/5.30/x86_64-cygwin-threads
+    /usr/share/perl5/5.30
+    .
+</pre>
+
+        </main>
+
+        <footer>
+            <p>
+            CPAN::Testers::Web v0.001 is powered by <a href="http://mojolicious.org">Mojolicious</a><br />
+            All data and statistics are copyright © 1999-2018 CPAN Testers, and available under the <a href="https://opensource.org/licenses/Artistic-2.0">Artistic License 2.0</a>. Comments and design patches to admin@cpantesters.org.
+            </p>
+
+            <p>
+            The CPAN Testers Family: <br />
+              <a href="http://blog.cpantesters.org"     title="CPAN Testers Blog"       >Blog</a>         •
+              <a href="http://www.cpantesters.org"      title="CPAN Testers Reports"    >Reports</a>      •
+              <a href="http://wiki.cpantesters.org"     title="CPAN Testers Wiki"       >Wiki</a>         •
+              <a href="http://stats.cpantesters.org"    title="CPAN Testers Statistics" >Statistics</a>   •
+              <a href="http://pass.cpantesters.org"     title="CPAN Testers PASS Matrix">PASS Matrix</a>  •
+              <a href="http://prefs.cpantesters.org"    title="CPAN Testers Preferences">Preferences</a>  •
+              <a href="http://metabase.cpantesters.org" title="CPAN Testers Metabase"   >Metabase</a>     •
+              <a href="http://devel.cpantesters.org"    title="CPAN Testers Development">Development</a>  •
+              <a href="http://deps.cpantesters.org"     title="CPAN Dependencies"       >Dependencies</a> •
+              <a href="http://matrix.cpantesters.org"   title="CPAN Testers Matrix"     >Matrix</a>       •
+              <a href="http://analysis.cpantesters.org" title="CPAN Testers Analysis"   >Analysis</a>     •
+              <a href="http://admin.cpantesters.org"    title="CPAN Testers Admin"      >Admin</a>
+            </p>
+            <p>
+            CPAN Testers, supporting the Perl programming language since 1999.
+            </p>
+        </footer>
+
+    </body>
+</html>
