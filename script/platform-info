@@ -1,10 +1,13 @@
 #!perl
 
-require Data::Dumper;
-require Devel::Platform::Info;
+use strict;
+use warnings;
 
-$Data::Dumper::Sortkeys = 1;
-print Data::Dumper::Dumper(Devel::Platform::Info->new->get_info);
+use Devel::Platform::Info;
+use JSON::PP;
+
+print JSON::PP->new->pretty->canonical->encode(
+    Devel::Platform::Info->new->get_info);
 
 # ABSTRACT: Print platform information gathered by Devel::Platform::Info
 # PODNAME:
