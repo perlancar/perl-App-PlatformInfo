@@ -3,8 +3,10 @@
 use strict;
 use warnings;
 
-use Devel::Platform::Info;
-use JSON::PP;
+# since we are datapack-ing this script, we avoid 'use' and use 'require'. see
+# Module::DataPack for more details.
+require Devel::Platform::Info;
+require JSON::PP;
 
 print JSON::PP->new->pretty->canonical->encode(
     Devel::Platform::Info->new->get_info);
